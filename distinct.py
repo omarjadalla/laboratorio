@@ -19,3 +19,6 @@ def distinct(arr):
 
 elementos = [1,0,2,8,2,1,1,3] 
 print( distinct(elementos) )
+
+#rodando online
+#https://onlinegdb.com/SycomVEqX
