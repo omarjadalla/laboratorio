@@ -1,24 +1,33 @@
-def distinct(arr): 
+def distinct(arr): #cria a função
     
-    n = len(arr)
-    dist = []
+    n = len(arr) #tamanho do array
+    dist = [] #lista para adicionar os elementos diferentes
     
-    for i in range(0, n): 
+    for i in range(0, n): #percorre um por um
   
-        d = 0
-        for j in range(0, i): 
-            if (arr[i] == arr[j]): 
-                d = 1
-                break
-  
-        if (d == 0): 
-            dist.append(arr[i]) 
+        d = 0 #zera contador
+        
+        for j in range(0, i): #percorre um por um até a posição atual
+            
+            if (arr[i] == arr[j]):  #se for igual a algum
+                d = 1  #incrementa o contador
+                break  #sai do loop
+            #fim do if
+            
+        #fim do for
+        
+        if (d == 0): #se contador for igual a zero
+            dist.append(arr[i]) #adiciona a lista de diferentes
+        #fim do if
     
-    return dist
+    #fim do for    
 
+    return dist #retorna a lista de diferentes
+#fim da função
 
-elementos = [1,0,2,8,2,1,1,3] 
-print( distinct(elementos) )
+elementos = [1,0,2,8,2,1,1,3] #cria variavel com a lista de elementos repetidos 
+print( distinct(elementos) ) #mostra na tela o retorno da função
+
 
 #rodando online
 #https://onlinegdb.com/SycomVEqX
