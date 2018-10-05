@@ -17,5 +17,5 @@ def distinct(arr):
     return dist
 
 
-elementos = [1,0,2,1,3]    
+elementos = [1,0,2,8,2,1,1,3] 
 print( distinct(elementos) )
