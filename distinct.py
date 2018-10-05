@@ -25,8 +25,23 @@ def distinct(arr): #cria a função
     return dist #retorna a lista de diferentes
 #fim da função
 
-elementos = [1,0,2,8,2,1,1,3] #cria variavel com a lista de elementos repetidos 
+elementos = [1,0,2,'b',2,'b',1,3,0,0,2,0,1] #cria variavel com a lista de elementos repetidos 
 print( distinct(elementos) ) #mostra na tela o retorno da função
+
+
+# Usando not in
+def unique(items):
+    found = set([])
+    keep = []
+
+    for item in items:
+        if item not in found:
+            found.add(item)
+            keep.append(item)
+
+    return keep
+
+print ( unique(elementos) )
 
 
 #rodando online
